@@ -1,0 +1,41 @@
+@keyframes pulse3D {
+  0%, 100% {
+    text-shadow:
+      1px 1px 0 #ff0080,
+      2px 2px 0 #ff00ff,
+      3px 3px 0 #9900ff;
+  }
+  50% {
+    text-shadow:
+      2px 2px 10px #ff0080,
+      3px 3px 20px #ff00ff,
+      4px 4px 30px #9900ff;
+  }
+}
+@keyframes popUp{
+  from{
+    scale: 0.6;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes tranformX {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-300px * 9));
+  }
+}
+.bg-blur{
+  backdrop-filter: blur(30px);
+}
+.gradient-text {
+  background: linear-gradient(122deg,rgba(133, 163, 255, 1) 0%, rgba(255, 0, 204, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
