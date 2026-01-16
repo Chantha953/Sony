@@ -40,6 +40,7 @@ const CardProduct = ({ image, name, price, getId, id }) => {
    if(isToken){
     setOrderItem([buying]);
     setOrderProduct([buying]);
+    setCountOrder(countOrder + 1);
     navigate("/checkout");
    }
    else{

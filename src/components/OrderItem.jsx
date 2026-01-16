@@ -40,7 +40,7 @@ const OrderItem = ({
           <div className="d-flex justify-content-between align-items-center flex-wrap">
             <p className="me-4">Weight : {weight}</p>
             <p className="me-4">Size : {size}</p>
-            <p className="me-4">ImageResolution : {resolution}</p>
+            <p className="me-4">Image Resolution : {resolution}</p>
             <p className="me-4">Aspect Ratio : {aspectRatio}</p>
             <p className="me-4">Video Recording : {video}</p>
           </div>

@@ -21,17 +21,21 @@ const SignUpPage = () => {
     isToken,
     password,
     setPassword,
-    setShowDetail
+    setShowDetail,
   } = useContext(ProductContext);
-  setShowDetail(false);
+  useEffect(() => {
+    setShowDetail(false);
+  }, []);
+
   useEffect(() => {
     if (isToken) {
       navigate("/information");
     }
-  }, []);
+  }, [isToken]);
   const handleSignUp = (e) => {
     e.preventDefault();
-    if (!signOutName || !signOutEmail || !signOutPassword || !ConfirmPassword) return;
+    if (!signOutName || !signOutEmail || !signOutPassword || !ConfirmPassword)
+      return;
     if (signOutPassword !== ConfirmPassword) {
       alert("Password not match !");
       return;
